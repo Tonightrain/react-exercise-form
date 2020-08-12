@@ -1,0 +1,76 @@
+.myForm {
+    background-color:rgba(166, 170, 175, 0.698);
+    width: 350px;
+    height: 500px;
+    text-align: center;
+}
+
+body{
+    border-color: white;
+}
+.myForm h1{
+    padding-top: 30px;
+    color: rgb(87, 83, 83);
+    padding-right: 50px;
+}
+
+.formName{
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+.formName label{
+    color: rgb(87, 83, 83);
+    font-weight: bold;
+    padding-right: 160px;
+}
+
+.formName input{
+    width: 200px;
+    height: 30px;
+}
+
+.formGender{
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.formGender label{
+    color: rgb(87, 83, 83);
+    font-weight: bold;
+    padding-right: 155px;
+}
+
+.formGender select{
+    width: 210px;
+    height: 35px;
+}
+
+.formDescription{
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+
+.formDescription label{
+    font-weight: bold;
+    color: rgb(87, 83, 83);
+    padding-right: 120px;
+}
+
+.formDescription input{
+    width: 200px;
+    height: 100px;
+}
+
+.formChoose label{
+    font-weight: bold;
+    color: rgb(87, 83, 83);
+    font-size: 12px;
+    
+}
+button{
+    margin-top:30px;
+    background-color: rgb(52, 172, 202);
+    color: white;
+    border-radius: 0;
+}
