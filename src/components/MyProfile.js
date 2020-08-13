@@ -13,7 +13,6 @@ class MyProfile extends Component {
     }
   }
   
-
   handleNameChange = (event) =>{
     this.setState({
       name:event.target.value,
@@ -37,8 +36,9 @@ handleChooseChange = (event)=>{
   })
 }
 
-handleSubmit = (event) => {
-  alert(JSON.stringify(event));
+handleSubmit = () => {
+  // console.log(this.state);
+  alert(JSON.stringify(this.state));
   event.preventDefault();
 }
 
@@ -68,20 +68,18 @@ handleSubmit = (event) => {
         </div>
         <div className="formChoose">
           <label>
-            <input type="checkbox" defaultChecked value={this.state.choose} onChange={this.handleChooseChange} />
+            <input type="checkbox" defaultChecked value={this.state.choose} onClick={this.handleChooseChange} />
             I have read the terms of conduct
           </label>
         </div>
         <div className="submit">
-          <button 
+          <input 
           type="submit" 
           value="Submit" 
           style={{width:"160px",
           height:"40px"}}
           disabled={!this.state.name ||!this.state.gender ||!this.state.description ||!this.state.choose}
-          onClick={this.handleSubmit}>
-            Submit
-          </button>
+          onClick={this.handleSubmit}></input>
         </div>
       </form>
     );
